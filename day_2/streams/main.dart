@@ -1,16 +1,35 @@
-void main() async {
-  countDown().listen((event) {
-    print(event);
-  }, onDone: () {
-    print("completed");
-  }, onError: (e) {
-    print(e);
-  });
+void main() {
+  // final human = Human("naveen", 13);
+
+  // final Human(:name, :age) = human;
+  // print('$name $age');
+
+  //   final Human(name:name122, age:age23232) = human;
+  //   print('$name122 $age23232');
+
+  var stem = "hello world"; // i want is Hello world
+  print(stem.CatpFirstLetter());
 }
 
-Stream<int> countDown() async* {
-  for (var i = 5; i > 0; i--) {
-    yield i;
-    await Future.delayed(Duration(seconds: 1));
+extension CapFirstLetter on String {
+  String CatpFirstLetter() {
+    return this[0].toUpperCase() + substring(1);
   }
 }
+
+
+
+
+
+
+
+
+
+
+// class Human {
+//   final String name;
+//   final int age;
+//   Human(this.name, this.age);
+// }
+
+
