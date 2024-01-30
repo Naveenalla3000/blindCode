@@ -1,0 +1,6 @@
+what is synchronization and asynchronization and proces-synchronization?
+excuation of code line by line
+1.------
+2.---------
+
+db-one country  <-----------------long distance----------------->  server-another country
